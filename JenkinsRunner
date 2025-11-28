@@ -1,8 +1,9 @@
 pipeline {
+    agent any // <-- THIS IS THE MISSING REQUIRED SECTION
     stages {
-        stage('Build') {
+        stage('Example') {
             steps {
-                bat 'echo Hello, Jenkins on Windows!'
+                // Your commands go here
             }
         }
     }
