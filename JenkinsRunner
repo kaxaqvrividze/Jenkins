@@ -1,9 +1,10 @@
 pipeline {
-    agent any // <-- THIS IS THE MISSING REQUIRED SECTION
+    agent any
     stages {
         stage('Example') {
             steps {
-               bat 'echo Starting the build process on Windows...'
+                 bat 'javac *.java'
+                 bat 'java Test'
             }
         }
     }
