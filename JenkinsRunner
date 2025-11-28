@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Example') {
             steps {
-                // Your commands go here
+               bat 'echo Starting the build process on Windows...'
             }
         }
     }
