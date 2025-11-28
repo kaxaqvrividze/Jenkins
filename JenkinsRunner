@@ -1,10 +1,12 @@
 pipeline {
-    agent any
+    // ...
     stages {
+        // ... (Checkout SCM stage)
         stage('Build') {
             steps {
-                sh 'javac Test.java'
-                sh 'java test'
+                // Change 'sh' to 'bat' for Windows commands
+                bat 'echo Hello, Jenkins on Windows!'
+                // Replace 'echo' with your actual build command (e.g., 'mvn clean install', 'npm install')
             }
         }
     }
